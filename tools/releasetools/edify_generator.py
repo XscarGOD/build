@@ -271,8 +271,8 @@ class EdifyGenerator(object):
       self.Print("        PixelExperience (Plus edition)")
       self.Print("                by jhenrique09")
     else:
-      self.Print("              PixelExperience")
-      self.Print("              by jhenrique09")
+      self.Print("              PixelExtended")
+      self.Print("              by Aryan Gupta")
     self.Print("----------------------------------------------")
     self.Print(" Android version: %s"%(android_version))
     self.Print(" Build id: %s"%(build_id))
