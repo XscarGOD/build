@@ -268,8 +268,8 @@ class EdifyGenerator(object):
                                   security_patch, device):
     self.Print("----------------------------------------------")
     if is_plus:
-      self.Print("        PixelExperience (Plus edition)")
-      self.Print("                by jhenrique09")
+      self.Print("                PixelExtended")
+      self.Print("                by Aryan Gupta")
     else:
       self.Print("              PixelExtended")
       self.Print("              by Aryan Gupta")
