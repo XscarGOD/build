@@ -14,8 +14,9 @@ LOCAL_PATH := $(BUILD_SYSTEM)
 #$(1): the src:dest pair
 #$(2): the dest
 define check-product-copy-files
-$(if $(filter-out $(TARGET_COPY_OUT_SYSTEM_OTHER)/%,$(2)), \
-  $(if $(filter %.apk, $(2)),$(error \
+$(if $(filter-out $(TARGET_COPY_OUT_SYSTEM_OTHER)/% \
+                  $(TARGET_COPY_OUT_SYSTEM)/framework/%.apk,$(2)), \
+  $(if $(filter %.apk, $(2)),$(info \
      Prebuilt apk found in PRODUCT_COPY_FILES: $(1), use BUILD_PREBUILT instead!))) \
 $(if $(filter true,$(BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES)),, \
   $(if $(filter $(TARGET_COPY_OUT_SYSTEM)/etc/vintf/% \
